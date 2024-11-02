@@ -1,14 +1,6 @@
 """
 Django commands to wait fot the database to be available
 """
-import os
-
-from django.conf import settings
-
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "app.settings")
-
-import django
-
 import time
 
 from psycopg2 import OperationalError as Psycopg2OpError
